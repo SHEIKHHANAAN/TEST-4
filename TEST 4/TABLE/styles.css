@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 600px) {
+  .table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: scroll;
+    max-height: 400px;
+  }
+
+  td:nth-child(1),
+  th:nth-child(1),
+  td:nth-child(2),
+  th:nth-child(2) {
+    position: sticky;
+    left: 0;
+    background-color: black;
+    z-index: 1;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+}
